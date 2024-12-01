@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>- ZAKOVAT -</header>
+<div class="container" id="mainContainer">
+    <div class="wheel-container">
+        <div class="wheel_box">
+            <canvas id="wheel" width="400" height="400"></canvas>
+
+            <div class="pointer"></div>
+        </div>
+
+        <div class="controls">
+            <button id="spinButton" class="primary">Start</button>
+            <button id="resetButton">Reset</button>
+        </div>
+    </div>
+    <div class="sidebar">
+            <textarea id="namesList" style="display: none;">
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12</textarea>
+        <div class="controls">
+            <button id="titleButton">Title</button>
+            <button id="editButton">Edit</button>
+            <button id="hideButton">HIDE...</button>
+        </div>
+        <div class="shortcuts">
+            <div><span class="key">SPACE</span> Aylantirish</div>
+            <div><span class="key">X</span> Javobni berkitish</div>
+            <div><span class="key">S</span> Belgilangan qismlarni olib tashlash</div>
+            <div><span class="key">R</span> Qayta boshlash</div>
+            <div><span class="key">E</span> Tahrirlash</div>
+        </div>
+    </div>
+
+    <div class="container_timer">
+        <div class="header">
+            <div class="mode-toggle">
+                <button class="active">Timer</button>
+                <button>Stopwatch</button>
+            </div>
+            <div class="controls_timer">
+                <button id="soundToggle">
+                    <svg class="sound-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M15.5 8a4.5 4.5 0 0 1 0 8M12 6L8 9H5v6h3l4 3V6z"/>
+                    </svg>
+                </button>
+                <button id="fullscreenToggle">
+                    <svg class="fullscreen-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                         stroke-width="2">
+                        <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div class="timer-display" id="display">5:00</div>
+
+        <div class="quick-add">
+            <button data-time="30">+0:30</button>
+            <button data-time="60">+1:00</button>
+            <button data-time="300">+5:00</button>
+        </div>
+
+        <div class="timer-button">
+            <button class="start-button" id="startButton">Start</button>
+            <button id="resetButtonTimer">Reset</button>
+        </div>
+    </div>
+</div>
+
+
+<div id="banner" class="banner"></div>
+<audio id="spinSound" src="baraban.m4a"></audio>
+
+<script src="script.js"></script>
+</body>
+</html>
