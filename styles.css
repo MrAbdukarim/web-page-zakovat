@@ -45,7 +45,7 @@ body {
     }
 
     &::after {
-        content: 'Created by Dev Club';
+        content: 'Created by MrAbdukarim {Dev Club}';
         position: fixed;
         bottom: 10px;
         color: #eee3;
